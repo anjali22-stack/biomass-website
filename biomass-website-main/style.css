@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3fff0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #2e8b57;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid yellow;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80') 
+    center/cover no-repeat;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Soft overlay behind the text to improve readability */
+.hero-overlay {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2e8b57;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
